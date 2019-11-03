@@ -10,7 +10,7 @@ namespace simple_shapes {
 	// ¬вод параметров обобщенной фигуры из файла
 	shape* In(ifstream &ifst)
 	{
-		shape *sp;
+		shape *sp; // тут таблица ( указатель ) 
 		int k;
 		ifst >> k;
 		switch (k) {
