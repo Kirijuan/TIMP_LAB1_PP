@@ -13,19 +13,20 @@ namespace simple_shapes {
 		shape *sp;
 		int k;
 		ifst >> k;
-		switch (k) {
+		switch (k) 
+		{
 		case 1:
 			sp = new shape;
 			sp->k = shape::key::RECTANGLE;
 			In(sp->r, ifst);
-			return sp;
 		case 2:
 			sp = new shape;
-			sp->k = shape::key::TRIANGLE;
+			sp->k = shape::key::CIRCLE;
 			In(sp->t, ifst);
-			return sp;
 		default:
 			return 0;
 		}
+		ifst >> sp->angle;
+		return sp;
 	}
 } // end simple_shapes namespace

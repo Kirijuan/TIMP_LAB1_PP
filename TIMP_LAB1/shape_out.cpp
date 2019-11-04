@@ -13,11 +13,12 @@ namespace simple_shapes {
 		case shape::key::RECTANGLE:
 			Out(s.r, ofst);
 			break;
-		case shape::key::TRIANGLE:
+		case shape::key::CIRCLE:
 			Out(s.t, ofst);
 			break;
 		default:
 			ofst << "Incorrect figure!" << endl;
 		}
+		ofst << "angle = " << s.angle << endl;
 	}
 }
